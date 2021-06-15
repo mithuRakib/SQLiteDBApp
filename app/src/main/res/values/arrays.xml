@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preference_color_entries">
+        <item>@string/color_entry_red</item>
+        <item>@string/color_entry_green</item>
+        <item>@string/color_entry_blue</item>
+    </array>
+
+    <array name="preference_color_entry_values">
+        <item>@string/color_entry_value_red</item>
+        <item>@string/color_entry_value_green</item>
+        <item>@string/color_entry_value_blue</item>
+    </array>
+</resources>

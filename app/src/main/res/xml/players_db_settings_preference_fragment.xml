@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:title="Change Link Color"
+        android:key="link_color"
+        android:defaultValue="red"
+        android:icon="@drawable/ic_baseline_palette_24"
+        android:entries="@array/preference_color_entries"
+        android:entryValues="@array/preference_color_entry_values"/>
+</PreferenceScreen>

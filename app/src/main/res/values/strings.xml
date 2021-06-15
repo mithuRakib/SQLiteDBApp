@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PracticeProject</string>
+
+
+    <string name="color_entry_red">Red</string>
+    <string name="color_entry_green">Green</string>
+    <string name="color_entry_blue">Blue</string>
+
+
+    <string name="color_entry_value_red">red</string>
+    <string name="color_entry_value_green">green</string>
+    <string name="color_entry_value_blue">blue</string>
+</resources>

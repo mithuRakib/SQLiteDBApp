@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="Change Name Color to Red"
+        android:key="color_green"
+        android:defaultValue="true"
+        android:summaryOn="Color is Red"
+        android:summaryOff="Color is Green" />
+</PreferenceScreen>

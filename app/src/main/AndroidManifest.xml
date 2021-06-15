@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.practiceproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".sqlitedb.PlayersDBActivitySettings"
+            android:label="Players DB Settings"
+            android:parentActivityName=".sqlitedb.AddPlayerToDBActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".sqlitedb.AddPlayerToDBActivity"/>
+        </activity>
+
+        <activity android:name=".Players.PlayersActivitySettings"
+            android:label="Players Activity Settings"
+            android:parentActivityName=".Players.PlayersActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Players.PlayersActivity" />
+        </activity>
+
+        <provider
+            android:name=".CustomContentProvider.PlayersContentProvider"
+            android:authorities="com.example.practiceproject"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".sqlitedb.AddPlayerToDBActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".sqlitedb.PlayersDBActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".LessonIntents.IntentsActivity" />
+        <activity android:name=".Players.PlayersActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
